@@ -1,0 +1,45 @@
+<html>
+
+<head>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+
+  <script>
+    $(function () {
+
+
+      let department = [];
+
+      $.getJSON('dept.json', function (data) {
+        $.each(data.department, function (key, value) {
+          let tblRow = "<tr>" + "<td>" + value.did + "</td>" +
+            "<td>" + value.dname + "</td>" + "<td>" + value.employees[0] +", "+ value.employees[1] + "</td>" + "</tr>"
+          $(tblRow).appendTo("#userdata tbody");
+        });
+
+      });
+
+    });
+  </script>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="profile">
+      <table id="userdata" border="2">
+        <thead>
+          <th>Id</th>
+          <th>Dname</th>
+          <th>List of Employees</th>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

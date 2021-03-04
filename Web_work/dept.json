@@ -1,0 +1,20 @@
+{
+    "department": [
+        {
+            "did": 2,
+            "dname": "HR",
+            "employees": ["Rahul", "Raj", "Charu"]
+        },
+        {
+            "did": 1,
+            "dname": "OSS",
+            "employees": ["Rahul", "Raj", "Charu"]
+
+        },
+        {
+            "did": 12,
+            "dname": "MS",
+            "employees": ["Rahul", "Raj", "Charu"]
+        }
+    ]
+ }
